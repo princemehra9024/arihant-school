@@ -166,6 +166,18 @@ export default function HomePage() {
           start: "top 80%"
         }
       });
+
+      // Developer Promo Animation
+      gsap.from(".developer-promo", {
+        scrollTrigger: {
+          trigger: ".developer-promo",
+          start: "top 95%",
+        },
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        ease: "power4.out",
+      });
     }
     fetchInquiries();
   }, []);
@@ -1902,26 +1914,35 @@ export default function HomePage() {
                 © {new Date().getFullYear()} ARIHANT ACADEMY. ALL RIGHTS RESERVED.
               </div>
               
-              {/* Premium Developer Promotion Section */}
-              <div className="pt-6 border-t border-gray-800">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-[#FF6B00] flex items-center justify-center border border-white shrink-0">
-                    <Zap className="w-4 h-4 text-white" />
+              {/* Premium Developer Promotion Section: EXECUTIVE PLAN */}
+              <div className="developer-promo pt-6 border-t border-gray-800">
+                <div className="flex items-center gap-3 mb-4 group cursor-pointer">
+                  <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center border-2 border-white shadow-[3px_3px_0px_#D2143A] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                    <Zap className="w-5 h-5 text-white animate-pulse" />
                   </div>
                   <div>
-                    <h4 className="text-white text-[10px] font-black uppercase tracking-widest">Need a website?</h4>
-                    <p className="text-gray-400 text-[8px] font-bold uppercase tracking-wider leading-none">Custom High-End Development</p>
+                    <h4 className="text-[#FF6B00] text-[11px] font-black uppercase tracking-[0.2em] leading-none mb-1">
+                      CREATED BY
+                    </h4>
+                    <h3 className="text-white text-[16px] font-black uppercase tracking-tighter leading-none group-hover:text-[#FF6B00] transition-colors">
+                      EXECUTIVE PLAN
+                    </h3>
                   </div>
                 </div>
-                <a 
-                  href="https://wa.me/919024546041?text=Hi, I saw the Arihant Academy website and I'm interested in your development services." 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-[#0B1B3D] px-3 py-1.5 text-[9px] font-black uppercase tracking-widest border-2 border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white transition-all w-fit shadow-[4px_4px_0px_#D2143A]"
-                >
-                  <Phone className="w-3 h-3" />
-                  Talk to Creator
-                </a>
+                <div className="space-y-4">
+                  <p className="text-gray-400 text-[9px] font-bold uppercase tracking-widest leading-relaxed max-w-[200px]">
+                    Transforming visions into high-impact digital experiences.
+                  </p>
+                  <a 
+                    href="https://wa.me/919024546041?text=Hi Executive Plan, I saw your work on the Arihant Academy website and I want to discuss a project." 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-white text-[#0B1B3D] px-5 py-2.5 text-[10px] font-black uppercase tracking-widest border-2 border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white transition-all w-fit shadow-[6px_6px_0px_#D2143A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                  >
+                    <Phone className="w-4 h-4" />
+                    Start Your Project
+                  </a>
+                </div>
               </div>
             </div>
           </div>
