@@ -1941,7 +1941,9 @@ export default function HomePage() {
                       "Portfolio Sites",
                       "Corporate Portals",
                       "Booking Systems",
-                      "Custom Web Apps"
+                      "Custom Web Apps",
+                      "Mobile App Dev",
+                      "UI/UX Solutions"
                     ].map((type, idx) => (
                       <div key={idx} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 bg-[#FF6B00] rotate-45" />
