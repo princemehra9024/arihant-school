@@ -1929,15 +1929,32 @@ export default function HomePage() {
                     </h3>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <p className="text-gray-400 text-[9px] font-bold uppercase tracking-widest leading-relaxed max-w-[200px]">
-                    Transforming visions into high-impact digital experiences.
+                <div className="space-y-6">
+                  <p className="text-gray-400 text-[10px] font-bold uppercase tracking-widest leading-relaxed max-w-xs">
+                    Transforming visions into high-impact digital experiences. We specialize in:
                   </p>
+                  
+                  <div className="grid grid-cols-2 gap-y-2 gap-x-4">
+                    {[
+                      "School Websites",
+                      "E-commerce Stores",
+                      "Portfolio Sites",
+                      "Corporate Portals",
+                      "Booking Systems",
+                      "Custom Web Apps"
+                    ].map((type, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-[#FF6B00] rotate-45" />
+                        <span className="text-white text-[9px] font-black uppercase tracking-wider">{type}</span>
+                      </div>
+                    ))}
+                  </div>
+
                   <a 
                     href="https://wa.me/919024546041?text=Hi Executive Plan, I saw your work on the Arihant Academy website and I want to discuss a project." 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-3 bg-white text-[#0B1B3D] px-5 py-2.5 text-[10px] font-black uppercase tracking-widest border-2 border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white transition-all w-fit shadow-[6px_6px_0px_#D2143A] active:translate-x-1 active:translate-y-1 active:shadow-none"
+                    className="inline-flex items-center gap-3 bg-white text-[#0B1B3D] px-6 py-3 text-[10px] font-black uppercase tracking-widest border-2 border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white transition-all w-fit shadow-[8px_8px_0px_#D2143A] active:translate-x-1 active:translate-y-1 active:shadow-none"
                   >
                     <Phone className="w-4 h-4" />
                     Start Your Project
