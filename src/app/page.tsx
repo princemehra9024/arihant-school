@@ -1897,12 +1897,31 @@ export default function HomePage() {
             <p className="text-xs text-gray-300 leading-relaxed font-semibold">
               Serving premium education benchmarks in Kota, Rajasthan since 2008. Affiliated with Central Board of Secondary Education, Delhi.
             </p>
-            <div className="pt-2 flex flex-col gap-1.5">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">
-                © {new Date().getFullYear()} Arihant Academy. All Rights Reserved.
-              </div>
+            <div className="pt-4 space-y-4">
               <div className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                Want a website creator? <a href="https://wa.me/919024546041" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-white transition-colors">WhatsApp 9024546041</a>
+                © {new Date().getFullYear()} ARIHANT ACADEMY. ALL RIGHTS RESERVED.
+              </div>
+              
+              {/* Premium Developer Promotion Section */}
+              <div className="pt-6 border-t border-gray-800">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-8 h-8 bg-[#FF6B00] flex items-center justify-center border border-white shrink-0">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-white text-[10px] font-black uppercase tracking-widest">Need a website?</h4>
+                    <p className="text-gray-400 text-[8px] font-bold uppercase tracking-wider leading-none">Custom High-End Development</p>
+                  </div>
+                </div>
+                <a 
+                  href="https://wa.me/919024546041?text=Hi, I saw the Arihant Academy website and I'm interested in your development services." 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-[#0B1B3D] px-3 py-1.5 text-[9px] font-black uppercase tracking-widest border-2 border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white transition-all w-fit shadow-[4px_4px_0px_#D2143A]"
+                >
+                  <Phone className="w-3 h-3" />
+                  Talk to Creator
+                </a>
               </div>
             </div>
           </div>
